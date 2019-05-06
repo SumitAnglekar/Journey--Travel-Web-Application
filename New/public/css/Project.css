@@ -1,0 +1,120 @@
+
+@font-face {
+font-family: Billabong;
+src: url(Billabong.ttf);
+}
+
+html{
+  height: 100%;
+  position: relative;
+
+}
+body{
+	font-family: "lato";
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: rgba(0,0,0, 0.6);
+}
+
+.navbar-header {
+}
+
+#content{
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: -2px 8px 3px rgba(0,0,0,0.4),
+                 2px 8px 13px rgba(0,0,0,0.1),
+                 0px -2px 23px rgba(0,0,0,0.1),
+                 0px 2px 23px rgba(0,0,0,0.1);
+    position: absolute;
+    z-index: 1;
+    top:50%; 
+    left:35%;
+}
+
+h1 {
+  color: white;
+      font-size: 45px;
+      font-family: "Merienda";
+
+}
+
+h3 {
+      color: white;
+      font-size: 25px;
+      font-family: "Merienda";
+
+}
+
+.btn btn-default btn-lg {
+  background-color: rgba(0,0,0,0.6);
+      font-size: 35px;
+      font-family: "Merienda";
+
+}
+
+.navbar-brand {
+      font-size: 20px;
+      font-family: 'Lobster', cursive;
+}
+
+/*gallery */
+figure {
+      position: relative;
+        
+      width: 32%;
+        border: thin #c0c0c0 solid;
+        display: inline-block;
+        flex-flow: column;
+        margin: 0;
+        padding: 5px;
+    }
+
+    figcaption {
+      width: 98%;
+        background-color: #222;
+        color: #fff;
+        font: italic smaller sans-serif;
+        padding: 3px;
+        text-align: center;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    .text {
+        background-color: #428BCA;
+        color: white;
+        font-size: 18px;
+        padding: 16px 32px;
+      }
+
+      figure:hover .image{
+        opacity: 0.3;
+      }
+
+      figure:hover .middle{
+        opacity: 1;
+      }

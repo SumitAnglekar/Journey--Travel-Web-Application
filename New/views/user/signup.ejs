@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html laang="en">
+<head>
+<title>Journey | Sign Up</title>
+<meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+      <!--- Font families ---->
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+     <!--- Font families ---->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+      <!-- For Tabs -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--For Tabs end -->
+
+      <link rel="stylesheet" type="text/css" href="/css/Project.css">
+      <link rel="stylesheet" type="text/css" href="/css/signup.css">
+
+</head>
+<body>
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+<nav class="navbar navbar-expand-lg navbar-inverse" role="navigation" style = "margin-bottom: 0px; margin-top: 0px;">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="iconic iconic-camera-rangefinder" title="camera rangefinder" aria-hidden="true"></span>
+  </button>
+
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">
+          <span class="fas fa-plane"></span>
+          JOURNEY
+        </a>
+    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contacts">Contact Us</a></li>
+
+      </ul>
+      
+     
+  </div>
+</nav>
+<div class="container">
+ <% if (hasErrors) { %>
+    <div class="alert alert-danger">
+
+
+ <% messages.forEach(function(message){%>
+<h4><%= message %></h4>
+  
+
+
+<% }) %>
+      </div>
+  <% } %> 
+<div class="signup-form">
+    <<form action="/user/signup" method="post">
+    <h3>Sign Up</h3>
+    <p>Please fill in this form to create an account!</p>
+    <hr>
+        <div class="form-group">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+        <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+      </div>
+        </div>
+    <div class="form-group">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+        <input type="text" class="form-control" name="password" placeholder="Password" required="required">
+      </div>
+        </div>
+
+    <div class="form-group">
+      <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+    </div>
+    <div class="form-group">
+             <a href="/user/signup"><button type="submit" class="btn btn-primary btn-lg">Sign Up</button></a>
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+    </div>
+    <div class="text-center">Already have an account? <a href="Login.html">Login here</a></div>
+    </form>
+  
+</div>
+</div>
+<div class="footer">
+    <footer class="text-center">
+            <nav class="footercontent">
+                <a href="https://www.facebook.com/" target="_blank" title="Jthink Facebook page"><img src="http://jthink.net/images/facebook.png" alt="Jthink Facebook page" title="Jthink Facebook page" height="32" width="32"/></a>&nbsp;
+                <a href="https://plus.google.com/" target="_blank" title="Jthink Google+ page"><img src="http://jthink.net/images/google_plus.png" alt="google_plus" title="Jthink Google+ page" height="32" width="32"/></a>&nbsp;
+                <a href="http://youtube.com/" target="_blank" title="Jthink YouTube channel"><img src="http://jthink.net/images/youtube.png" alt="Jthink YouTube channel" title="Jthink YouTube channel" height="32" width="32"/></a>
+                <a href="mailto:anglekar.s@husky.neu.edu" target="_blank" title="Email Paul at Jthink"><img src="http://jthink.net/images/email.png" alt="Email Paul at Jthink" title="Email Paul at Jthink" height="32" width="32"/></a>&nbsp;
+                <a href="#" target="_blank" title="Subscribe to Weekly Newsletter"><img src="http://jthink.net/images/subscribe_newsletter.png" alt="Subscribe to Weekly Newsletter" title="Subscribe to Weekly Newsletter"/></a>&nbsp;
+            </nav>
+             <span class="text-muted">Copyright JThink Ltd 2004 - 2018 All rights reserved. All trademarks acknowledged</span>
+        </footer>
+    </div>
+</body>
+</html>

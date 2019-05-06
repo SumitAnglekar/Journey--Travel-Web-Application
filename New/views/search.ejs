@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Journey | Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css">      
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+      <!--- Font families ---->
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+     <!--- Font families ---->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+
+      <!-- For Tabs -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--For Tabs end -->
+
+      <link rel="stylesheet" type="text/css" href="/css/Project.css">
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+      height: 100%;
+    }
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+
+    }
+  </style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-inverse" role="navigation" style = "margin-bottom: 0px; margin-top: 0px;">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="iconic iconic-camera-rangefinder" title="camera rangefinder" aria-hidden="true"></span>
+  </button>
+
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">
+          <span class="fas fa-plane"></span>
+          JOURNEY
+        </a>
+
+    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contacts">Contact Us</a></li>
+
+      </ul>
+      
+      
+
+      <ul class="nav navbar-nav navbar-right">
+      <% if(login){ %>
+           <li><a href='/user/logout'>Logout<i class="fas fa-sign-in-alt"></i></a></li>
+           <% } else{ %> 
+          <li><a href='/user/signin'>Login<i class="fas fa-sign-in-alt"></i></a></li>
+          <% } %>
+      
+      </ul>
+  </div>
+</nav>
+
+<!-- <div class="container_12"> -->
+
+<div id="myCarousel" class="carousel slide bg-inverse w-50 ml-auto mr-auto" data-ride="carousel" style="padding-top: 50px">
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/images/city1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/images/city2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/images/city3.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/images/city4.jpg" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/images/city5.jpg" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/images/city6.jpg" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/images/city7.jpg" alt="Fourth slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><img src="/images/link1.png" alt="Cinque Terre"><a href="#"></a></p><br>
+      <p><img src="/images/link2.jpg" alt="Cinque Terre"><a href="#"></a></p><br>
+      <p><img src="/images/link3.jpg" alt="Cinque Terre"><a href="#"></a></p><br>
+      <p><img src="/images/link4.jpg" alt="Cinque Terre"><a href="#"></a></p><br>
+    
+    </div>
+  
+  <div class="col-sm-8 sidenav">
+            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th><h2>Airline Name</h2></th>
+        <th><h2>Time</h2></th>
+        <th><h2>Price</h2></th>
+      </tr>
+    </thead>
+    <tbody style="font-size:20px;">
+      <% flights.forEach(function(flight){ %>
+
+       <tr>
+        
+        <td><img src="<%= flight.AirlineImage %>" class="img-circle" alt="Cinque Terre" width="100" height="100"><div> <%=flight.AirlineName %></div></td>
+        <td><%=flight.DepartureTime %> -  <%=flight.ArrivalTime %></td>
+        <td><%=flight.TicketPrice %></td>
+        <td><a href="/passenger/<%=flight._id%>"><button type="button" class="btn btn-primary btn-lg" onClick='send()'>Book</button></td></a>
+      </tr>
+
+      <% }) %>
+    </tbody>
+  </table>
+</div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p><img src="/images/ads1.jpg" alt="Cinque Terre"><a href="#"><button type="button" class="btn btn-info">BookSale</button></a></p>
+      </div>
+      <br>
+
+
+      <div class="well">
+        <p><img src="/images/ads2.jpg" alt="Cinque Terre"><a href="#"></a></p>
+      </div>
+      <br>
+
+
+      <div class="well">
+        <p><img src="/images/ads3.jpg" alt="Cinque Terre"><a href="#"></a></p>
+      </div>
+      <br>
+
+       <div class="well">
+        <p><img src="/images/ads4.jpg" alt="Cinque Terre"><a href="#"></a></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <footer class="text-center">
+            <nav class="footercontent">
+                <a href="https://www.facebook.com/" target="_blank" title="Jthink Facebook page"><img src="http://jthink.net/images/facebook.png" alt="Jthink Facebook page" title="Jthink Facebook page" height="32" width="32"/></a>&nbsp;
+                <a href="https://plus.google.com/" target="_blank" title="Jthink Google+ page"><img src="http://jthink.net/images/google_plus.png" alt="google_plus" title="Jthink Google+ page" height="32" width="32"/></a>&nbsp;
+                <a href="http://youtube.com/" target="_blank" title="Jthink YouTube channel"><img src="http://jthink.net/images/youtube.png" alt="Jthink YouTube channel" title="Jthink YouTube channel" height="32" width="32"/></a>
+                <a href="mailto:anglekar.s@husky.neu.edu" target="_blank" title="Email Paul at Jthink"><img src="http://jthink.net/images/email.png" alt="Email Paul at Jthink" title="Email Paul at Jthink" height="32" width="32"/></a>&nbsp;
+                <a href="#" target="_blank" title="Subscribe to Weekly Newsletter"><img src="http://jthink.net/images/subscribe_newsletter.png" alt="Subscribe to Weekly Newsletter" title="Subscribe to Weekly Newsletter"/></a>&nbsp;
+            </nav>
+             <span class="text-muted">Copyright JThink Ltd 2004 - 2018 All rights reserved. All trademarks acknowledged</span>
+        </footer>
+    </div>
+</body>
+</html>
